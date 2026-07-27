@@ -1,6 +1,7 @@
 project "GLFW"
 	kind "StaticLib"
 	language "C"
+	location "%{wks.location}/Violet/vendor/GLFW"
 
 	targetdir ("bin/"     .. outputDir .. "/%{prj.name}")
 	objdir    ("bin-int/" .. outputDir .. "/%{prj.name}")
@@ -25,9 +26,11 @@ project "GLFW"
 	}	
 
 	filter "system:windows"
-		buildoptions { "-std=c11", "-lgdi32" }
+		cdialect "C11"
 		systemversion "latest"
 		staticruntime "On"
+
+		links { "gdi32" }
 
 		files {
 			"src/win32_init.c",
@@ -48,4 +51,4 @@ project "GLFW"
 		}
 
 	filter { "system:windows", "configurations:Release" }
-		buildoptions "/MT"
+		runtime "Release"

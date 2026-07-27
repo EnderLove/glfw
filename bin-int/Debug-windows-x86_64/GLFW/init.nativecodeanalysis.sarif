@@ -1,0 +1,115 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "MSVC Code Analysis",
+          "version": "14.51.36248.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///k:/proyects/programming/violetengine/violet/violet/vendor/glfw/src/init.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "c897f085f3eba14d7692ef3da85e1a4d1bc52d2c921e76ba5f5de5d25ac66b12"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///k:/proyects/programming/violetengine/violet/violet/vendor/glfw/src/internal.h"
+          },
+          "hashes": {
+            "sha-256": "f3ad5c9f7e37811f5cacefbda705d381285152030741904f4bcc92d33fd8c15b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///k:/proyects/programming/violetengine/violet/violet/vendor/glfw/include/glfw/glfw3.h"
+          },
+          "hashes": {
+            "sha-256": "f282ea3103df017de887b468de7d18f5008aec55920fa18dfa54e274143c7ade"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///k:/proyects/programming/violetengine/violet/violet/vendor/glfw/src/platform.h"
+          },
+          "hashes": {
+            "sha-256": "3e58f4003ecf6ee8a53660963a7417b2272a5f87f12d2ad4211efea8e4d0185b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///k:/proyects/programming/violetengine/violet/violet/vendor/glfw/src/null_platform.h"
+          },
+          "hashes": {
+            "sha-256": "022947b33b698ff11b58f9e70ed9018e7da0e3abed6ea463f01a8f5ecf4dba6f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///k:/proyects/programming/violetengine/violet/violet/vendor/glfw/src/win32_platform.h"
+          },
+          "hashes": {
+            "sha-256": "a921664503f64394a9fb733bbef489281004cf18feee72ce3c810a02f242d068"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///k:/proyects/programming/violetengine/violet/violet/vendor/glfw/src/null_joystick.h"
+          },
+          "hashes": {
+            "sha-256": "2d2184d632a1295c8d5ab46787e7b8cb1fcaa79dcc8a58f3845f6c4e1ec81380"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///k:/proyects/programming/violetengine/violet/violet/vendor/glfw/src/win32_joystick.h"
+          },
+          "hashes": {
+            "sha-256": "ab879f41b2be9bc12c251d88d1e639808ec02440cb56c6f02fba3481885d979d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///k:/proyects/programming/violetengine/violet/violet/vendor/glfw/src/win32_thread.h"
+          },
+          "hashes": {
+            "sha-256": "65ecf3040c932e3cc3dfd46836c9574bd050fb9c1693d56039dcd110572d31a8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///k:/proyects/programming/violetengine/violet/violet/vendor/glfw/src/win32_time.h"
+          },
+          "hashes": {
+            "sha-256": "387146f66e90593a9e42b1d8848cb74cf0f92d8529cdc0935d2f359ff8a78af9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///k:/proyects/programming/violetengine/violet/violet/vendor/glfw/include/glfw/glfw3native.h"
+          },
+          "hashes": {
+            "sha-256": "4fdfaf7914714166242af177bb45950c2f5bd804a77017a8c37f336d99edd0e5"
+          }
+        }
+      ]
+    }
+  ]
+}
