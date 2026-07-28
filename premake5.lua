@@ -1,6 +1,7 @@
 project "GLFW"
 	kind "StaticLib"
 	language "C"
+	staticruntime "On"
 	location "%{wks.location}/Violet/vendor/GLFW"
 
 	targetdir ("bin/"     .. outputDir .. "/%{prj.name}")
@@ -26,10 +27,9 @@ project "GLFW"
 	}	
 
 	filter "system:windows"
-		cdialect "C11"
+		--cdialect "C11"
 		systemversion "latest"
-		staticruntime "On"
-
+	
 		links { "gdi32" }
 
 		files {
@@ -50,5 +50,10 @@ project "GLFW"
 			"_CRT_SECURE_NO_WARNINGS"
 		}
 
+	filter { "system:windows", "configurations:Debug" }
+		runtime "Debug"
+		symbols "on"
+
 	filter { "system:windows", "configurations:Release" }
 		runtime "Release"
+		optimize "on"
